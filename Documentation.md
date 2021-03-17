@@ -260,4 +260,22 @@ This is contact information for the artist.
 | --- | --- | --- | --- |
 | PRIMARY | `contact_id` | PRIMARY |   |
 
+## View: `artist_summary`
 
+A description of the view and its intended use and users: 
+
+A quick overview of all the active artists to provide people interested in women/femme/GNC/trans electronic DJs information on the artist’s name, gender identities, and genres of music that they cover. The focus is to help people connect with artists that share their gender identities or to find queer artists creating music in specific genres.  
+
+A description of the columns: 
+
+Artist_name: Name of the artist 
+
+Artist_id: unique PK of the artist 
+
+Genre_name: name of the genre 
+
+Genre_id: unique PK of the genre 
+
+Self_id: unique PK of the gender identity 
+
+Gender_name: name of the gender identity 
