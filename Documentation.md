@@ -260,4 +260,44 @@ This is contact information for the artist.
 | --- | --- | --- | --- |
 | PRIMARY | `contact_id` | PRIMARY |   |
 
+## View: `artist_summary`
+
+A description of the view and its intended use and users: 
+
+A quick overview of all the active artists to provide people interested in women/femme/GNC/trans electronic DJs information on the artist’s name, gender identities, and genres of music that they cover. The focus is to help people connect with artists that share their gender identities or to find queer artists creating music in specific genres.  
+
+A description of the columns: 
+
+Artist_name: Name of the artist 
+
+Artist_id: unique PK of the artist 
+
+Genre_name: name of the genre 
+
+Genre_id: unique PK of the genre 
+
+Self_id: unique PK of the gender identity 
+
+Gender_name: name of the gender identity 
+
+## View: `artist_affiliations`
+
+A description of the view and its intended use and users: 
+This view shows artists and their affiliations, such as clubs, radion stations, collaborations, and agents. Each artist may have several of these entries. This view is useful for people that want to see where an artist plays, and who they perform with. The view provides the Artist Name, Affiliations, the Affiliation Type, Location and a URL to each affiliated entity.   
+
+A description of the columns: 
+
+artist_id: unique identifier from the artists table
+
+affil_id: unique identifier from the affiliations table
+
+Artist Name: renamed from artist_name and is the current active name of the performing artist
+
+Affiliation Name: renamed from affil_name and is the name of the entity the artist is connected with. These identifiers are important for emerging artists as some places are significant in the electronic music culture and signify an artists prominence. 
+
+Affiliation Type: renamed from affil_type, this column describes the relationship to the artist. This could be radio stations, clubs, residencies, other performing artists, festivals, etc. 
+
+Location: renamed from affil_city, this provides a geographic location for the artist. This is important for people looking to hire the artist or for people interested in a particular sound associated with a locale. 
+
+Website: renamed from affil_url, this provides a link to the affiliated entity. 
 
