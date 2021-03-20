@@ -342,7 +342,27 @@ Number of Active Genres: The number of music genres that are present in the data
 
 ### Columns:
 
-| Column | Column | Column |
-| ------ | ------ | ------ |
-|        |        |        |
+
+## View: `artist_genre_productions`
+
+##### A description of the view and its intended use and users:<br>
+The 'artist_genre_productions' view brings together the current artist names, production tools they use and the genres of electronic music they produce. This view is valuable for those that are interested in the technical aspects of electronic music, its technological history or aspire to recreate the sounds of a particular genre or artist. Over time, this view will be a resource for understanding the instrumentation across a wide range of genres.  
+
+#### A description of the columns:  
+
+Artist Name: Renamed from artist_name, this pulls from the artists table. 
+Active?: Renamed from artist_active, the view is set to only draw from active (Yes) artists. 
+Type: Renamed from prod_type from the productions table, this is the type or class of instrument. 
+Brand: Renamed from prod_name from the productions table, this is the brand of the instrument. 
+Model: Renamed from prod_model from the productions table, this is the model of the instrument. 
+Genres: Renamed from genre_name from the genres table, this is the genre of the music, which uses controlled vocabulary from wikipedia entry on 'list of electronic music genres'.
+Other columns: There are multiple columns for artist_id, prod_id, etc - these have been collapsed or hidden as much as possible. 
+
+### Columns:
+| Artist Name | Active? | Type | Brand | Model | Genres |
+| ----------- | ------- | ---- | ----- | ----- | ------ |
+|             |         |      |       |       |        |
+
+
+###Team 9: Poppy Riddle, Vinson Li, Shannon Farrell, Sarah Maddox and Emily McClean
 
