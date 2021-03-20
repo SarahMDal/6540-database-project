@@ -310,3 +310,27 @@ Website: renamed from affil_url, this provides a link to the affiliated entity.
 |           |         |             |                  |                  |          |         |
 
 
+## View: `active_artist_count`
+
+A description of the view and its intended use and users: The active artist count view displays the number of artists currently active in the database. This view is intended to be used to monitor the size of the database. The view would be useful for showing the size on a website homepage or to help monitor the growth of the site. 
+
+#### A description of the columns: 
+
+Number of Active Artist: The number of artists with the status ‘active’ in the database. 
+
+| Number of Active Artists |
+| ------------------------ |
+|                          |
+
+## View: `active_genre_count`
+
+A description of the view and its intended use and users: The active genre count database view presents the number of music genres that are represented in the database. This view allows users to gauge the breadth of music genres that are contained within the database, and allows users to observe how much the database may have grown since its conception.  
+
+#### A description of the columns:  
+
+Number of Active Genres: The number of music genres that are present in the database.  
+
+| Column | Column | Column |
+| ------------------------ |
+|        |        |        |
+
