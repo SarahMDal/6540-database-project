@@ -219,7 +219,7 @@ There will likely be many affil_id for each artist_id.
 
 ### Description: 
 
-
+This is social media information for the artist, including platforms used for music distribution. 
 
 ### Columns: 
 
