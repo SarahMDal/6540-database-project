@@ -266,7 +266,7 @@ A description of the view and its intended use and users:
 
 A quick overview of all the active artists to provide people interested in women/femme/GNC/trans electronic DJs information on the artist’s name, gender identities, and genres of music that they cover. The focus is to help people connect with artists that share their gender identities or to find queer artists creating music in specific genres.  
 
-A description of the columns: 
+#### A description of the columns: 
 
 Artist_name: Name of the artist 
 
@@ -280,16 +280,19 @@ Self_id: unique PK of the gender identity
 
 Gender_name: name of the gender identity 
 
+### Columns:
+
 | artist_name | artist_id| genre_name | genre_id | self_id | gender_name |
 | ----------- | -------- | ---------- | -------- |-------- |------------ |
 |             |          |            |          |         |             |
+
 
 ## View: `artist_affiliations`
 
 A description of the view and its intended use and users: 
 This view shows artists and their affiliations, such as clubs, radion stations, collaborations, and agents. Each artist may have several of these entries. This view is useful for people that want to see where an artist plays, and who they perform with. The view provides the Artist Name, Affiliations, the Affiliation Type, Location and a URL to each affiliated entity.   
 
-A description of the columns: 
+#### A description of the columns: 
 
 artist_id: unique identifier from the artists table
 
@@ -305,9 +308,12 @@ Location: renamed from affil_city, this provides a geographic location for the a
 
 Website: renamed from affil_url, this provides a link to the affiliated entity. 
 
+### Columns:
+
 | artist_id | affil_id| Artist Name | Affiliation Name | Affiliation Type | Location | Website |
 | --------- | ------- | ----------- | ---------------- | ---------------- |--------- | --------|
 |           |         |             |                  |                  |          |         |
+
 
 
 ## View: `active_artist_count`
@@ -318,9 +324,13 @@ A description of the view and its intended use and users: The active artist coun
 
 Number of Active Artist: The number of artists with the status ‘active’ in the database. 
 
+### Columns:
+
 | Number of Active Artists |
 | ------------------------ |
 |                          |
+
+
 
 ## View: `active_genre_count`
 
@@ -329,6 +339,8 @@ A description of the view and its intended use and users: The active genre count
 #### A description of the columns:  
 
 Number of Active Genres: The number of music genres that are present in the database.  
+
+### Columns:
 
 | Column | Column | Column |
 | ------ | ------ | ------ |
