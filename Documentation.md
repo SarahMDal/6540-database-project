@@ -351,11 +351,17 @@ The 'artist_genre_productions' view brings together the current artist names, pr
 #### A description of the columns:  
 
 Artist Name: Renamed from artist_name, this pulls from the artists table. <br>
+
 Active?: Renamed from artist_active, the view is set to only draw from active (Yes) artists. <br>
+
 Type: Renamed from prod_type from the productions table, this is the type or class of instrument.<br> 
+
 Brand: Renamed from prod_name from the productions table, this is the brand of the instrument. <br>
+
 Model: Renamed from prod_model from the productions table, this is the model of the instrument. <br>
+
 Genres: Renamed from genre_name from the genres table, this is the genre of the music, which uses controlled vocabulary from wikipedia entry on 'list of electronic music genres'.<br>
+
 Other columns: There are multiple columns for artist_id, prod_id, etc - these have been collapsed or hidden as much as possible.<br> 
 
 ### Columns:
@@ -364,5 +370,5 @@ Other columns: There are multiple columns for artist_id, prod_id, etc - these ha
 |             |         |      |       |       |        |
 
 
-###Team 9: Poppy Riddle, Vinson Li, Shannon Farrell, Sarah Maddox and Emily McClean
+### Team 9: Poppy Riddle, Vinson Li, Shannon Farrell, Sarah Maddox and Emily McClean
 
