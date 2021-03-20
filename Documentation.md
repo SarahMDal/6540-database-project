@@ -305,3 +305,8 @@ Location: renamed from affil_city, this provides a geographic location for the a
 
 Website: renamed from affil_url, this provides a link to the affiliated entity. 
 
+| artist_id | affil_id| Artist Name | Affiliation Name | Affiliation Type | Location | Website |
+| --------- | ------- | ----------- | ---------------- | ---------------- |--------- | --------|
+|           |         |             |                  |                  |          |         |
+
+
