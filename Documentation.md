@@ -280,6 +280,10 @@ Self_id: unique PK of the gender identity
 
 Gender_name: name of the gender identity 
 
+| artist_name | artist_id| genre_name | genre_id | self_id | gender_name |
+| ----------- | -------- | ---------- | -------- |-------- |------------ |
+|             |          |            |          |         |             |
+
 ## View: `artist_affiliations`
 
 A description of the view and its intended use and users: 
