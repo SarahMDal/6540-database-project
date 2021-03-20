@@ -331,6 +331,6 @@ A description of the view and its intended use and users: The active genre count
 Number of Active Genres: The number of music genres that are present in the database.  
 
 | Column | Column | Column |
-| ------------------------ |
+| ------ | ------ | ------ |
 |        |        |        |
 
