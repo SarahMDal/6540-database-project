@@ -260,6 +260,8 @@ This is contact information for the artist.
 | --- | --- | --- | --- |
 | PRIMARY | `contact_id` | PRIMARY |   |
 
+# Views
+
 ## View: `artist_summary`
 
 A description of the view and its intended use and users: 
