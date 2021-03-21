@@ -219,7 +219,7 @@ There will likely be many affil_id for each artist_id.
 
 ### Description: 
 
-
+This is social media information for the artist, including platforms used for music distribution. 
 
 ### Columns: 
 
@@ -266,7 +266,7 @@ A description of the view and its intended use and users:
 
 A quick overview of all the active artists to provide people interested in women/femme/GNC/trans electronic DJs information on the artist’s name, gender identities, and genres of music that they cover. The focus is to help people connect with artists that share their gender identities or to find queer artists creating music in specific genres.  
 
-A description of the columns: 
+#### A description of the columns: 
 
 Artist_name: Name of the artist 
 
@@ -280,12 +280,19 @@ Self_id: unique PK of the gender identity
 
 Gender_name: name of the gender identity 
 
+### Columns:
+
+| artist_name | artist_id| genre_name | genre_id | self_id | gender_name |
+| ----------- | -------- | ---------- | -------- |-------- |------------ |
+|             |          |            |          |         |             |
+
+
 ## View: `artist_affiliations`
 
 A description of the view and its intended use and users: 
 This view shows artists and their affiliations, such as clubs, radion stations, collaborations, and agents. Each artist may have several of these entries. This view is useful for people that want to see where an artist plays, and who they perform with. The view provides the Artist Name, Affiliations, the Affiliation Type, Location and a URL to each affiliated entity.   
 
-A description of the columns: 
+#### A description of the columns: 
 
 artist_id: unique identifier from the artists table
 
@@ -300,4 +307,68 @@ Affiliation Type: renamed from affil_type, this column describes the relationshi
 Location: renamed from affil_city, this provides a geographic location for the artist. This is important for people looking to hire the artist or for people interested in a particular sound associated with a locale. 
 
 Website: renamed from affil_url, this provides a link to the affiliated entity. 
+
+### Columns:
+
+| artist_id | affil_id| Artist Name | Affiliation Name | Affiliation Type | Location | Website |
+| --------- | ------- | ----------- | ---------------- | ---------------- |--------- | --------|
+|           |         |             |                  |                  |          |         |
+
+
+
+## View: `active_artist_count`
+
+A description of the view and its intended use and users: The active artist count view displays the number of artists currently active in the database. This view is intended to be used to monitor the size of the database. The view would be useful for showing the size on a website homepage or to help monitor the growth of the site. 
+
+#### A description of the columns: 
+
+Number of Active Artist: The number of artists with the status ‘active’ in the database. 
+
+### Columns:
+
+| Number of Active Artists |
+| ------------------------ |
+|                          |
+
+
+
+## View: `active_genre_count`
+
+A description of the view and its intended use and users: The active genre count database view presents the number of music genres that are represented in the database. This view allows users to gauge the breadth of music genres that are contained within the database, and allows users to observe how much the database may have grown since its conception.  
+
+#### A description of the columns:  
+
+Number of Active Genres: The number of music genres that are present in the database.  
+
+### Columns:
+
+
+## View: `artist_genre_productions`
+
+##### A description of the view and its intended use and users:<br>
+The 'artist_genre_productions' view brings together the current artist names, production tools they use and the genres of electronic music they produce. This view is valuable for those that are interested in the technical aspects of electronic music, its technological history or aspire to recreate the sounds of a particular genre or artist. Over time, this view will be a resource for understanding the instrumentation across a wide range of genres.  
+
+#### A description of the columns:  
+
+Artist Name: Renamed from artist_name, this pulls from the artists table. <br>
+
+Active?: Renamed from artist_active, the view is set to only draw from active (Yes) artists. <br>
+
+Type: Renamed from prod_type from the productions table, this is the type or class of instrument.<br> 
+
+Brand: Renamed from prod_name from the productions table, this is the brand of the instrument. <br>
+
+Model: Renamed from prod_model from the productions table, this is the model of the instrument. <br>
+
+Genres: Renamed from genre_name from the genres table, this is the genre of the music, which uses controlled vocabulary from wikipedia entry on 'list of electronic music genres'.<br>
+
+Other columns: There are multiple columns for artist_id, prod_id, etc - these have been collapsed or hidden as much as possible.<br> 
+
+### Columns:
+| Artist Name | Active? | Type | Brand | Model | Genres |
+| ----------- | ------- | ---- | ----- | ----- | ------ |
+|             |         |      |       |       |        |
+
+
+### Team 9: Poppy Riddle, Vinson Li, Shannon Farrell, Sarah Maddox and Emily McClean
 
