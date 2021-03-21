@@ -370,5 +370,31 @@ Other columns: There are multiple columns for artist_id, prod_id, etc - these ha
 |             |         |      |       |       |        |
 
 
+## View: `social_media_display`
+
+##### A description of the view and its intended use and users:<br>
+The social media view would be intended to display the name of the artist right alongside their Usernames and the social media sites they use. As an artist grows and they branch out into more and more social media platforms, it can be difficult to track who manages what account and what usernames they use across these platforms (especially considering that sometimes their “brand” name or stage name might already be taken by a fan account if they are late to arrive to the platform). This view will help to illustrate which sites are most popular among these artists, which should help viewers find a likeminded community, as well as keeping track of their many usernames/aliases. 
+
+#### A description of the columns:  
+
+`artist_id`: The assigned unique identifier for each artist will be kept for cross reference with other tables. 
+
+`social_id`: The assigned unique identifier for each social media will be kept for cross reference with other tables. 
+
+ `artist_name`: Renamed as Artist Name, to display the artist’s stage name/full name to make the database easier for users to navigate.  
+
+`social_username`: Renamed as Username, to display the artist’s various Usernames to make the database easier for users to navigate. 
+
+`social_URL`: Renamed as URL, displays the URL of an artist’s social media website. 
+
+`social_site_name`: Renamed as Website, displays which social media website is being used, examples might include Twitter, Instagram, Soundcloud, ect.  
+
+### Columns:
+| artist_id | social_id | Artist Name | Username | URL | Website |
+| --------- | --------- | ----------- | -------- | --- | ------- |
+|           |           |             |          |     |         |
+
+
+
 ### Team 9: Poppy Riddle, Vinson Li, Shannon Farrell, Sarah Maddox and Emily McClean
 
