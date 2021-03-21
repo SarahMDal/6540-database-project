@@ -260,6 +260,8 @@ This is contact information for the artist.
 | --- | --- | --- | --- |
 | PRIMARY | `contact_id` | PRIMARY |   |
 
+# Views
+
 ## View: `artist_summary`
 
 A description of the view and its intended use and users: 
@@ -268,17 +270,17 @@ A quick overview of all the active artists to provide people interested in women
 
 #### A description of the columns: 
 
-Artist_name: Name of the artist 
+`Artist_name`: Name of the artist 
 
-Artist_id: unique PK of the artist 
+`Artist_id`: unique PK of the artist 
 
-Genre_name: name of the genre 
+`Genre_name`: name of the genre 
 
-Genre_id: unique PK of the genre 
+`Genre_id`: unique PK of the genre 
 
-Self_id: unique PK of the gender identity 
+`Self_id`: unique PK of the gender identity 
 
-Gender_name: name of the gender identity 
+`Gender_name`: name of the gender identity 
 
 ### Columns:
 
@@ -294,19 +296,19 @@ This view shows artists and their affiliations, such as clubs, radion stations, 
 
 #### A description of the columns: 
 
-artist_id: unique identifier from the artists table
+`artist_id`: unique identifier from the artists table
 
-affil_id: unique identifier from the affiliations table
+`affil_id`: unique identifier from the affiliations table
 
-Artist Name: renamed from artist_name and is the current active name of the performing artist
+`Artist Name`: renamed from artist_name and is the current active name of the performing artist
 
-Affiliation Name: renamed from affil_name and is the name of the entity the artist is connected with. These identifiers are important for emerging artists as some places are significant in the electronic music culture and signify an artists prominence. 
+`Affiliation Name`: renamed from affil_name and is the name of the entity the artist is connected with. These identifiers are important for emerging artists as some places are significant in the electronic music culture and signify an artists prominence. 
 
-Affiliation Type: renamed from affil_type, this column describes the relationship to the artist. This could be radio stations, clubs, residencies, other performing artists, festivals, etc. 
+`Affiliation Type`: renamed from affil_type, this column describes the relationship to the artist. This could be radio stations, clubs, residencies, other performing artists, festivals, etc. 
 
-Location: renamed from affil_city, this provides a geographic location for the artist. This is important for people looking to hire the artist or for people interested in a particular sound associated with a locale. 
+`Location`: renamed from affil_city, this provides a geographic location for the artist. This is important for people looking to hire the artist or for people interested in a particular sound associated with a locale. 
 
-Website: renamed from affil_url, this provides a link to the affiliated entity. 
+`Website`: renamed from affil_url, this provides a link to the affiliated entity. 
 
 ### Columns:
 
@@ -322,7 +324,7 @@ A description of the view and its intended use and users: The active artist coun
 
 #### A description of the columns: 
 
-Number of Active Artist: The number of artists with the status ‘active’ in the database. 
+`Number of Active Artist`: The number of artists with the status ‘active’ in the database. 
 
 ### Columns:
 
@@ -338,10 +340,13 @@ A description of the view and its intended use and users: The active genre count
 
 #### A description of the columns:  
 
-Number of Active Genres: The number of music genres that are present in the database.  
+`Number of Active Genres`: The number of music genres that are present in the database.  
 
 ### Columns:
 
+| Number of Active Genres |
+| ----------------------- |
+|                         |
 
 ## View: `artist_genre_productions`
 
@@ -350,15 +355,15 @@ The 'artist_genre_productions' view brings together the current artist names, pr
 
 #### A description of the columns:  
 
-Artist Name: Renamed from artist_name, this pulls from the artists table. <br>
+`Artist Name`: Renamed from artist_name, this pulls from the artists table. <br>
 
-Active?: Renamed from artist_active, the view is set to only draw from active (Yes) artists. <br>
+`Active?`: Renamed from artist_active, the view is set to only draw from active (Yes) artists. <br>
 
-Type: Renamed from prod_type from the productions table, this is the type or class of instrument.<br> 
+`Type`: Renamed from prod_type from the productions table, this is the type or class of instrument.<br> 
 
-Brand: Renamed from prod_name from the productions table, this is the brand of the instrument. <br>
+`Brand`: Renamed from prod_name from the productions table, this is the brand of the instrument. <br>
 
-Model: Renamed from prod_model from the productions table, this is the model of the instrument. <br>
+`Model`: Renamed from prod_model from the productions table, this is the model of the instrument. <br>
 
 Genres: Renamed from genre_name from the genres table, this is the genre of the music, which uses controlled vocabulary from wikipedia entry on 'list of electronic music genres'.<br>
 
@@ -368,6 +373,32 @@ Other columns: There are multiple columns for artist_id, prod_id, etc - these ha
 | Artist Name | Active? | Type | Brand | Model | Genres |
 | ----------- | ------- | ---- | ----- | ----- | ------ |
 |             |         |      |       |       |        |
+
+
+## View: `social_media_display`
+
+##### A description of the view and its intended use and users:<br>
+The social media view would be intended to display the name of the artist right alongside their Usernames and the social media sites they use. As an artist grows and they branch out into more and more social media platforms, it can be difficult to track who manages what account and what usernames they use across these platforms (especially considering that sometimes their “brand” name or stage name might already be taken by a fan account if they are late to arrive to the platform). This view will help to illustrate which sites are most popular among these artists, which should help viewers find a likeminded community, as well as keeping track of their many usernames/aliases. 
+
+#### A description of the columns:  
+
+`artist_id`: The assigned unique identifier for each artist will be kept for cross reference with other tables. 
+
+`social_id`: The assigned unique identifier for each social media will be kept for cross reference with other tables. 
+
+ `artist_name`: Renamed as Artist Name, to display the artist’s stage name/full name to make the database easier for users to navigate.  
+
+`social_username`: Renamed as Username, to display the artist’s various Usernames to make the database easier for users to navigate. 
+
+`social_URL`: Renamed as URL, displays the URL of an artist’s social media website. 
+
+`social_site_name`: Renamed as Website, displays which social media website is being used, examples might include Twitter, Instagram, Soundcloud, ect.  
+
+### Columns:
+| artist_id | social_id | Artist Name | Username | URL | Website |
+| --------- | --------- | ----------- | -------- | --- | ------- |
+|           |           |             |          |     |         |
+
 
 
 ### Team 9: Poppy Riddle, Vinson Li, Shannon Farrell, Sarah Maddox and Emily McClean
