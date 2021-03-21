@@ -342,6 +342,9 @@ A description of the view and its intended use and users: The active genre count
 
 ### Columns:
 
+| Number of Active Genres |
+| ----------------------- |
+|                         |
 
 ## View: `artist_genre_productions`
 
